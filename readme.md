@@ -12,8 +12,14 @@ npm install --save authors-to-markdown
 
 ```javascript
 var authorsToMarkdown = require('authors-to-markdown')
+var pkg = require('./package.json')
 
-authorsToMarkdown()  // => true
+authorsToMarkdown(pkg)
+// - [adam morse](mailto:hi@mrmrs.cc)
+// - [robert forloine](http://sndsgn.com)
+// - [david potsiadlo](http://davidpots.com)
+// - [tyler benziger](http://tybenz.com)
+// - [john otander](http://johnotander.com)
 ```
 
 ## License
